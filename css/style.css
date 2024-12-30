@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #2d2d2d;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+img {
+  max-width: 100%;
+  /* vertical-align: bottom; */
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+h2 {
+  font-weight: normal;
+}
+
+
+/* -----------------------------
+Mainvisual
+-------------------------------- */
+.mainvisual {
+  width: 90vw;
+  margin: 4% auto 10px auto;
+}
+
+/* -----------------------------
+Header
+-------------------------------- */
+#header {
+ display: flex;
+ align-items: center;
+ width: 90vw;
+ margin: 0 auto;
+}
+#header .site-title {
+ width: 110px;
+ margin-right: 20px;
+ line-height: 1px;
+ display: block;
+}
+#header nav ul {
+  display: flex;
+}
+#header nav li {
+  margin: 0 20px;
+  font-size: 12px;
+}
+
+
+/* -----------------------------
+Concept, Work
+-------------------------------- */
+.content {
+  display: flex;
+  align-items: center;
+  margin: 60px 0;
+}
+.content .img {
+  width: 575px;
+}
+.text {
+  width: 485px;
+  padding: 0 40px;
+}
+
+/* -----------------------------
+Online Stor Btn
+-------------------------------- */
+.btn {
+  margin: 100px auto;
+  border: solid 0.5px #d3d3d3;
+  display: block;
+  width: 25%;
+  line-height: 3;
+  text-align: center;
+  font-size: 14px;
+}
+.store {
+  padding: 10px 0;
+}
+
+/* -----------------------------
+Contact
+-------------------------------- */
+.contact {
+  text-align: center;
+  margin: 60px auto 100px auto;
+  border: solid 1px #d3d3d3;
+  padding: 30px 60px 60px 60px;
+}
+.contact_title{
+  margin-bottom: 30px;
+}
+.contact_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact_info dl {
+  width: 50%;
+  border-right: 2px solid #a9a9a9;
+  text-align: left;
+  margin-right: 20px;
+}
+.contact_info dl dd {
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+.contact_text {
+  width: 50%;
+}
+.content_text #ct_btn {
+  margin-top: 20px;
+  border-bottom: #d3d3d3 solid 1px;
+}
+
+/* -----------------------------
+link
+-------------------------------- */
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.link {
+  border-bottom: solid 1px #d3d3d3;
+}
+
+/* -----------------------------
+footer
+-------------------------------- */
+#footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#footer img {
+  width: 110px;
+}
+
+/* -----------------------------
+SP
+-------------------------------- */
+@media screen and (max-width: 767px) { */
+  /* -----------------------------
+  MainVisual
+  -------------------------------- */
+  .mainvisual {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .mainvisual img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  #work {
+    flex-direction: column-reverse;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .contact .img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .content .text{
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact_info {
+    flex-direction: column;
+  }
+  .contact_info dl {
+    border: none;
+  }
+  
+  #ct_text {
+    margin-top: 20px;
+  }
+}
